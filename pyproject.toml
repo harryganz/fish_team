@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fish-team"
+version = "0.1.0"
+description = "Assemble an all-star baseball team whose surnames match fish names"
+requires-python = ">=3.11"
+dependencies = [
+    "rapidfuzz>=3.0",
+    "requests>=2.28",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+phonetic = ["jellyfish>=1.0"]
+embedding = ["numpy>=1.26"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+fish-team = "fish_team.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

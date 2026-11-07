@@ -1,0 +1,107 @@
+# Head nouns that are not fish words.
+#
+# The matcher only ever compares a surname against the HEAD NOUN of a fish name
+# ("largemouth bass" -> bass). A handful of ASFIS and Wikipedia entries are headed by a
+# modifier, a colour or a body part rather than by a fish word ("White-eye", "Common
+# silver belly", "Marine fishes NEI"), and those produce junk matches. Listed words are
+# popped as if they were not there, so "Common silver belly" contributes no head noun.
+#
+# One word per line; blank lines and #-comments ignored. Matching is on the singularised,
+# lowercased head. For a hyphenated head only the final segment is tested, so "eye"
+# covers "white-eye" and "blue-eye".
+
+# colours and shades
+white
+black
+red
+blue
+green
+yellow
+gray
+grey
+brown
+silver
+golden
+gold
+orange
+purple
+pink
+olive
+dark
+pale
+
+# size, shape and other bare modifiers
+spotted
+striped
+banded
+barred
+common
+giant
+dwarf
+false
+true
+great
+greater
+lesser
+smooth
+rough
+spiny
+naked
+blind
+
+# habitat and geography used as a head
+sea
+deep
+deepsea
+ocean
+river
+lake
+stream
+reef
+marine
+freshwater
+atlantic
+pacific
+indian
+northern
+southern
+eastern
+western
+
+# body parts that end up as heads
+eye
+belly
+mouth
+tail
+fin
+nose
+line
+bat
+
+# generic or aggregate terms
+fish
+fishes
+other
+others
+hybrid
+var
+spp
+sp
+nei
+million
+species
+unidentified
+
+# participles and prose artefacts that Wikipedia's list leaves as heads
+# ("Four-eyed fish", "Mail-cheeked fish", "Flying fish", "Diversity of fish")
+flying
+eyed
+cheeked
+the
+
+# taxonomic group names and a mollusc that slipped into the Wikipedia list
+elasmobranch
+stromateidae
+tenuis
+snail
+diversity

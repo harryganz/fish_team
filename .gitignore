@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Large downloaded data (>100MB, exceeds GitHub limit)
+data/raw/glove-wiki-gigaword-300.gz
